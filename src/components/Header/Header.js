@@ -12,16 +12,16 @@ function Header() {
           </div>
           <ul>
             <li>
-              <Link to="/">ACCUEIL</Link>
+              <Link to="/portfolio_react/home">ACCUEIL</Link>
             </li>
             <li>
-            <Link to="/about">ABOUT</Link>
+            <Link to="/portfolio_react/about">ABOUT</Link>
             </li>
             <li>
-              <Link to="/contact">CONTACT</Link>
+              <Link to="/portfolio_react/contact">CONTACT</Link>
             </li>
             <li>
-              <Link to="/projects">PROJECTS</Link>
+              <Link to="/portfolio_react/projects">PROJECTS</Link>
             </li>
           </ul>
         </div>
