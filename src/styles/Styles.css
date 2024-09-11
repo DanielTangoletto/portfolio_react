@@ -1,0 +1,32 @@
+@import "./App.css";
+@import "../components/Header/Header.css";
+@import "../pages/Home/Home.css";
+@import "../pages/About/About.css";
+@import "../pages/Contact/Contact.css";
+@import "../pages/Projects/Projects.css";
+@import url("https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap");
+
+@media (max-width: 399px) {
+  * {
+    display: none;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration-line: none;
+  list-style-type: none;
+}
+
+body {
+  background-color: #252525;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+}
+
+a {
+  color: black;
+}

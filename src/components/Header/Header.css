@@ -1,0 +1,142 @@
+header {
+  height: 10vh;
+  background-color: #fff;
+}
+
+.nav_logo ul {
+  display: flex;
+  align-items: center;
+  gap: 4vw;
+}
+
+header li {
+  font-size: 25px;
+  font-weight: 300;
+  transition: font-weight 400ms ease-out;
+}
+
+header li:hover {
+  font-weight: 900;
+  background: linear-gradient(180deg, #000000 0%, #494949 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  cursor: pointer;
+}
+
+/* MOBILE (min 400 max 768) ------------- */
+
+@media all and (min-width: 400px) and (max-width: 768px) {
+  .nav_logo {
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .logo {
+    display: flex;
+    width: 70vw;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo p {
+    font-size: 3.5vw;
+    font-weight: 900;
+    background: linear-gradient(180deg, #000000 0%, #494949 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .nav_logo ul {
+    display: flex;
+    gap: 7vw;
+  }
+
+  header li {
+    font-size: 15px;
+  }
+}
+
+/* TABLET (min 769 max 1024) ------------- */
+
+@media all and (min-width: 769px) and (max-width: 1024px) {
+  .nav_logo {
+
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .logo {
+    display: flex;
+    width: 25vw;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo p {
+    font-size: 2vw;
+    font-weight: 900;
+    background: linear-gradient(180deg, #000000 0%, #494949 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .nav_logo ul {
+    display: flex;
+    gap: 4vw;
+  }
+
+  header li {
+    font-size: 15px;
+  }
+}
+
+/* DESKTOP (min 1025 et >>>) ------------- */
+
+@media all and (min-width: 1025px) {
+  .nav_logo {
+    border: 1px solid blue;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo {
+    position: absolute;
+    left: 2%;
+    transform: translateX(-2%);
+    display: flex;
+    width: 280px;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo p {
+    font-size: 25px;
+    font-weight: 900;
+    background: linear-gradient(180deg, #000000 0%, #494949 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .nav_logo ul {
+    display: flex;
+    gap: 3vw;
+  }
+
+  header li {
+    font-size: 1.5vw;
+  }
+}

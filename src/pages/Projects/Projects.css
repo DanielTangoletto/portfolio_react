@@ -1,0 +1,235 @@
+.projects {
+  height: 980px;
+}
+
+.projects h1 {
+  position: absolute;
+  left: 31.45%;
+  top: 14.8%;
+  font-weight: 900;
+  font-size: 100px;
+  background: linear-gradient(180deg, #000000 0%, #494949 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.projects h2 {
+  position: absolute;
+  font-weight: 300;
+  left: 61.4%;
+  top: 25.5%;
+  transform: rotate(-2deg);
+}
+
+/* ALL CARDS */
+
+.font-one,
+.font-two,
+.font-three,
+.font-four,
+.font-five,
+.font-six {
+  font-family: "Protest Strike", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.card p {
+  color: #fff;
+}
+
+#shadow-one,
+#shadow-two,
+#shadow-three {
+  z-index: 0;
+  top: 41.67%;
+}
+
+#img-one,
+#img-two,
+#img-three {
+  top: 37%;
+  z-index: -1;
+}
+
+.font-one,
+.font-two,
+.font-three {
+  top: 50.92%;
+}
+
+.description-one,
+.description-two,
+.description-three {
+  width: 300px;
+  height: 50px;
+  text-align: center;
+  font-size: 20px;
+  top: 54.63%;
+}
+
+/* ------------- */
+
+#shadow-four,
+#shadow-five,
+#shadow-six {
+  z-index: 0;
+  top: 69.4%;
+}
+
+#img-four,
+#img-five,
+#img-six {
+  top: 64%;
+  z-index: -1;
+}
+
+.font-four,
+.font-five,
+.font-six {
+  top: 78.7%;
+}
+
+.description-four,
+.description-five,
+.description-six {
+  width: 300px;
+  height: 50px;
+  text-align: center;
+  font-size: 20px;
+  top: 82.4%;
+}
+
+/* CARD 1 */
+
+#shadow-one,
+#img-one,
+.font-one,
+.description-one {
+  position: absolute;
+}
+
+#shadow-one,
+#img-one {
+  left: 13.28%;
+}
+
+.font-one {
+  left: 21.67%;
+}
+
+.description-one {
+  left: 16%;
+}
+
+/* CARD 2 */
+
+#shadow-two,
+#img-two,
+.font-two,
+.description-two {
+  position: absolute;
+}
+
+#shadow-two,
+#img-two {
+  left: 39.32%;
+}
+
+.font-two {
+  left: 45.7%;
+}
+
+.description-two {
+  left: 42.3%;
+}
+
+/* CARD 3 */
+
+#shadow-three,
+#img-three,
+.font-three,
+.description-three {
+  position: absolute;
+}
+
+#shadow-three,
+#img-three {
+  left: 65.36%;
+}
+
+.font-three {
+  left: 72%;
+}
+
+.description-three {
+  left: 67.7%;
+}
+
+/* CARD 4 */
+
+#shadow-four,
+#img-four,
+.font-four,
+.description-four {
+  position: absolute;
+}
+
+#shadow-four,
+#img-four {
+  left: 13.28%;
+}
+
+.font-four {
+  left: 19.4%;
+}
+
+.description-four {
+  left: 16%;
+}
+
+/* CARD 5 */
+#shadow-five,
+#img-five,
+.font-five,
+.description-five {
+  position: absolute;
+}
+
+#shadow-five,
+#img-five {
+  left: 39.32%;
+}
+
+.font-five {
+  left: 48.2%;
+}
+
+.description-five {
+  left: 42.3%;
+}
+
+/* CARD 6 */
+
+#shadow-six,
+#img-six,
+.font-six,
+.description-six {
+  position: absolute;
+}
+
+#shadow-six,
+#img-six {
+  left: 65.36%;
+}
+
+.font-six {
+  left: 68.8%;
+}
+
+.description-six {
+  left: 68%;
+}
