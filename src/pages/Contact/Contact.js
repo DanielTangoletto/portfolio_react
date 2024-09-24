@@ -4,7 +4,7 @@ import BG from "../../assets/bg.png";
 function Contact() {
   return (
     <div className="forms">
-      <img src={BG} alt="" />
+      <img id="background" src={BG} alt="" />
       <div className="form-content">
         <h1>Me contacter</h1>
         <form action="" method="get" class="form-example">

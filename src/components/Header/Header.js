@@ -12,7 +12,7 @@ function Header() {
           </div>
           <ul>
             <li>
-              <Link to="/portfolio_react/">ACCUEIL</Link>
+              <Link to="/portfolio_react/">HOME</Link>
             </li>
             <li>
             <Link to="/portfolio_react/about">ABOUT</Link>

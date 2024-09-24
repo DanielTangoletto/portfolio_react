@@ -1,4 +1,4 @@
-header {
+header, .nav_logo {
   height: 10vh;
   background-color: #fff;
 }
@@ -6,7 +6,14 @@ header {
 .nav_logo ul {
   display: flex;
   align-items: center;
-  gap: 4vw;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  gap: 10px;
 }
 
 header li {
@@ -24,119 +31,122 @@ header li:hover {
   cursor: pointer;
 }
 
-/* MOBILE (min 400 max 768) ------------- */
-
-@media all and (min-width: 400px) and (max-width: 768px) {
-  .nav_logo {
-    height: 10vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-  }
-
-  .logo {
-    display: flex;
-    width: 70vw;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .logo p {
-    font-size: 3.5vw;
-    font-weight: 900;
-    background: linear-gradient(180deg, #000000 0%, #494949 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-  }
-
+/* MOBILE (320 -> 480 ) ------------- */
+@media all and (min-width: 320px) {
   .nav_logo ul {
-    display: flex;
-    gap: 7vw;
+    justify-content: center;
+    gap: 10vw;
   }
 
-  header li {
-    font-size: 15px;
+  .nav_logo li {
+    font-size: 10px;
+  }
+  .logo {
+    padding: 7px 0px;
+  }
+  .logo img {
+    width: 30px;
+  }
+  .logo p {
+    font-size: 12px;
   }
 }
-
-/* TABLET (min 769 max 1024) ------------- */
-
+/* iPads / Tablets (481 -> 768) ------------- */
+@media all and (min-width: 481px) and (max-width: 768px) {
+  .nav_logo {
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav_logo ul {
+    gap: 4vw;
+    margin-right: 3vw;
+  }
+  .logo {
+    margin-left: 3vw;
+  }
+  .logo p {
+    width: 100px;
+  }
+}
+/* Laptops and small screen (769 -> 1024 ) ------------- */
 @media all and (min-width: 769px) and (max-width: 1024px) {
   .nav_logo {
-
-    height: 10vh;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
   }
-
-  .logo {
-    display: flex;
-    width: 25vw;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .logo p {
-    font-size: 2vw;
-    font-weight: 900;
-    background: linear-gradient(180deg, #000000 0%, #494949 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-  }
-
   .nav_logo ul {
-    display: flex;
-    gap: 4vw;
+    gap: 5vw;
+    margin-right: 3vw;
   }
-
-  header li {
-    font-size: 15px;
+  .nav_logo li {
+    font-size: 16px;
+  }
+  .logo {
+    margin-left: 3vw;
+  }
+  .logo img {
+    width: 40px;
+  }
+  .logo p {
+    width: 150px;
+    font-size: 14px;
   }
 }
-
-/* DESKTOP (min 1025 et >>>) ------------- */
-
-@media all and (min-width: 1025px) {
+/* Large screens and Desktops (1025 -> 1200 ) ------------- */
+@media all and (min-width: 1025px) and (max-width: 1200px) {
   .nav_logo {
-    border: 1px solid blue;
-    height: 10vh;
     display: flex;
     align-items: center;
-    justify-content: center;
   }
-
-  .logo {
-    position: absolute;
-    left: 2%;
-    transform: translateX(-2%);
-    display: flex;
-    width: 280px;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .logo p {
-    font-size: 25px;
-    font-weight: 900;
-    background: linear-gradient(180deg, #000000 0%, #494949 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-  }
-
   .nav_logo ul {
-    display: flex;
-    gap: 3vw;
+    border: 1px solid red;
+    gap: 5vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .nav_logo li {
+    font-size: 20px;
+  }
+  .logo {
+    border: 1px solid blue;
+    margin-left: 3vw;
+  }
+  .logo img {
+    width: 40px;
+  }
+  .logo p {
+    width: 150px;
+    font-size: 14px;
   }
 
-  header li {
-    font-size: 1.5vw;
+}
+/* TV and Extra Large Screens (1201 -> 1920 ) ------------- */
+@media all and (min-width: 1201px) {
+  .nav_logo {
+    display: flex;
+    align-items: center;
   }
+  .nav_logo ul {
+    border: 1px solid red;
+    gap: 5vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .nav_logo li {
+    font-size: 20px;
+  }
+  .logo {
+    border: 1px solid blue;
+    margin-left: 3vw;
+  }
+  .logo img {
+    width: 50px;
+  }
+  .logo p {
+    width: 150px;
+    font-size: 18px;
+  }
+}
+/* XXL Screen ( > 1921 ) ------------- */
+@media all and (min-width: 1921px) {
 }

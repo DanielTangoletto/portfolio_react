@@ -1,4 +1,5 @@
 import React from "react";
+import BG from "../../assets/bg.png";
 import Shadow from "../../assets/Projects/0_shadow.png";
 import Booki from "../../assets/Projects/1_booki.png";
 import Bluel from "../../assets/Projects/2_sophie_bluel.png";
@@ -10,6 +11,7 @@ import Grimoire from "../../assets/Projects/6_grimoire.png";
 const Projects = () => {
   return (
     <div className="projects">
+      <img id="background" src={BG} alt="" />
       <h1>MES PROJETS</h1>
       <h2>.. réalisés au cours de ma formation</h2>
       <div className="cards">
