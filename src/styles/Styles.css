@@ -21,7 +21,11 @@
 }
 
 body {
-  background-color: #252525;
+  width: 100%;
+  /* max-width: 1366px; */
+  margin: 0 auto;
+  /* background-color: rgb(235, 235, 235); */
+  background: radial-gradient(50% 88.89% at 50% 55.35%, #89f7fe 0%, #66a6ff 100%);
   font-family: Inter;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

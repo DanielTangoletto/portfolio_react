@@ -1,6 +1,19 @@
-header, .nav_logo {
-  height: 10vh;
+header {
+  width: 100%;
   background-color: #fff;
+}
+
+.nav_logo {
+  max-width: 1366px;
+  background-color: #fff;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header,
+.nav_logo {
+  height: 100px;
 }
 
 .nav_logo ul {
@@ -18,7 +31,7 @@ header, .nav_logo {
 
 header li {
   font-size: 25px;
-  font-weight: 300;
+  font-weight: 400;
   transition: font-weight 400ms ease-out;
 }
 
@@ -31,41 +44,67 @@ header li:hover {
   cursor: pointer;
 }
 
+.logo p {
+  background: linear-gradient(180deg, #000000 0%, #494949 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
 /* MOBILE (320 -> 480 ) ------------- */
-@media all and (min-width: 320px) {
+@media all and (min-width: 320px) and (max-width: 480px) {
+  .nav_logo {
+    flex-direction: column;
+  }
+
+  .logo {
+    height: 60px;
+  }
+
   .nav_logo ul {
     justify-content: center;
-    gap: 10vw;
+    gap: 8.5vw;
+    height: 40px;
   }
 
   .nav_logo li {
-    font-size: 10px;
+    font-size: 12px;
   }
-  .logo {
-    padding: 7px 0px;
-  }
+
   .logo img {
-    width: 30px;
+    width: 35px;
   }
   .logo p {
-    font-size: 12px;
+    font-size: 3.5vw;
   }
 }
 /* iPads / Tablets (481 -> 768) ------------- */
 @media all and (min-width: 481px) and (max-width: 768px) {
   .nav_logo {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
   }
-  .nav_logo ul {
-    gap: 4vw;
-    margin-right: 3vw;
-  }
+
   .logo {
-    margin-left: 3vw;
+    height: 60px;
+  }
+
+  .logo img {
+    width: 40px;
   }
   .logo p {
-    width: 100px;
+    width: 200px;
+  }
+
+  .nav_logo ul {
+    justify-content: center;
+    gap: 9vw;
+    height: 40px;
+  }
+
+  .nav_logo li {
+    font-size: 15px;
   }
 }
 /* Laptops and small screen (769 -> 1024 ) ------------- */
@@ -73,80 +112,51 @@ header li:hover {
   .nav_logo {
     display: flex;
     justify-content: space-between;
+    margin-right: 4vw;
   }
   .nav_logo ul {
     gap: 5vw;
-    margin-right: 3vw;
   }
   .nav_logo li {
-    font-size: 16px;
+    font-size: 2vw;
   }
   .logo {
-    margin-left: 3vw;
-  }
-  .logo img {
-    width: 40px;
-  }
-  .logo p {
-    width: 150px;
-    font-size: 14px;
-  }
-}
-/* Large screens and Desktops (1025 -> 1200 ) ------------- */
-@media all and (min-width: 1025px) and (max-width: 1200px) {
-  .nav_logo {
-    display: flex;
-    align-items: center;
-  }
-  .nav_logo ul {
-    border: 1px solid red;
-    gap: 5vw;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .nav_logo li {
-    font-size: 20px;
-  }
-  .logo {
-    border: 1px solid blue;
-    margin-left: 3vw;
-  }
-  .logo img {
-    width: 40px;
-  }
-  .logo p {
-    width: 150px;
-    font-size: 14px;
-  }
-
-}
-/* TV and Extra Large Screens (1201 -> 1920 ) ------------- */
-@media all and (min-width: 1201px) {
-  .nav_logo {
-    display: flex;
-    align-items: center;
-  }
-  .nav_logo ul {
-    border: 1px solid red;
-    gap: 5vw;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .nav_logo li {
-    font-size: 20px;
-  }
-  .logo {
-    border: 1px solid blue;
-    margin-left: 3vw;
+    margin-left: 4vw;
   }
   .logo img {
     width: 50px;
   }
   .logo p {
     width: 150px;
-    font-size: 18px;
+    font-size: 2vw;
   }
 }
-/* XXL Screen ( > 1921 ) ------------- */
-@media all and (min-width: 1921px) {
+/* Large screens and Desktops (1025 ->) ------------- */
+@media all and (min-width: 1025px) {
+  .nav_logo ul {
+    width: 67%;
+    justify-content: left;
+    gap: 5vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .nav_logo li {
+    font-size: 20px;
+  }
+  .logo {
+    justify-content: left;
+    margin-left: 3vw;
+    width: 30%;
+  }
+  .logo img {
+    width: 50px;
+  }
+  .logo p {
+    width: 175px;
+    font-size: 25px;
+  }
+}
+
+/* XXL Screen ( > 1367 ) ------------- */
+@media all and (min-width: 1367px) {
 }

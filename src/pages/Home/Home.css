@@ -1,11 +1,30 @@
+.home {
+  max-width: 1366px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .home,
 .home img {
-  height: 90vh;
+  min-height: calc(100vh - 100px);
 }
 
 .home img {
   width: 100vw;
+  max-width: 1366px;
   position: absolute;
+  display: none;
+  /* display temporaire */
+}
+
+.home h1 {
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.home p {
+  padding-top: 5px;
+  padding-bottom: 20px;
 }
 
 .home p,
@@ -16,26 +35,81 @@
   background-clip: text;
 }
 
+.home button {
+  width: 150px;
+  height: 30px;
+  background-color: #fff;
+  font-family: Inter;
+  border: transparent 1px solid;
+  transition: all 500ms linear;
+}
+
 .home button:hover {
   cursor: pointer;
-  font-size: 20px;
+  border: #000000 1px solid;
 }
 
 /* MOBILE (320 -> 480 ) ------------- */
-@media all and (min-width: 320px) {
+@media all and (min-width: 320px) and (max-width: 480px) {
+  .home_mobile {
+    margin: 0 auto;
+    width: 98vw;
+    min-height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .home_mobile h1 {
+    width: 95vw;
+    word-break: break-word;
+    font-size: 8.5vw;
+  }
 }
 /* iPads / Tablets (481 -> 768) ------------- */
 @media all and (min-width: 481px) and (max-width: 768px) {
+  .home_mobile {
+    border: solid 1px red;
+    margin: 0 auto;
+    width: 95vw;
+    min-height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .home_mobile h1 {
+    border: solid 1px red;
+    width: 85vw;
+    word-break: break-word;
+    font-size: 7vw;
+  }
 }
 /* Laptops and small screen (769 -> 1024 ) ------------- */
 @media all and (min-width: 769px) and (max-width: 1024px) {
+  .home_mobile {
+    min-height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .home h1 {
+    width: 700px;
+    border: 1px solid blue;
+    font-size: 60px;
+  }
+
+  .home p {
+    rotate: -1.5deg;
+  }
 }
-/* Large screens and Desktops (1025 -> 1200 ) ------------- */
-@media all and (min-width: 1025px) and (max-width: 1200px) {
-}
-/* TV and Extra Large Screens (1201 -> 1920 ) ------------- */
-@media all and (min-width: 1201px) {
-}
-/* XXL Screen ( > 1921 ) ------------- */
-@media all and (min-width: 1921px) {
+/* Large screens and Desktops (1025 ->) ------------- */
+@media all and (min-width: 1025px) {
 }

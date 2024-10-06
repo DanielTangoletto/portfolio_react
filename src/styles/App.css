@@ -1,7 +1,4 @@
 .App {
-  background: radial-gradient(50% 88.89% at 50% 55.35%, #89f7fe 0%, #66a6ff 100%);
+  /* background: radial-gradient(50% 88.89% at 50% 55.35%, #89f7fe 0%, #66a6ff 100%); */
   font-family: Inter;
-  max-width: 1920px;
-  width: 100%;
-  margin: 0 auto;
 }
